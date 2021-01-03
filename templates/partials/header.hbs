@@ -1,0 +1,7 @@
+<div class="header">
+    {{#each headerLinks}}
+        <a href="{{path}}"  class="link {{#if isActive}}active-link{{/if}}">
+            {{linkText}}
+        </a>
+    {{/each}}
+</div>

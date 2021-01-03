@@ -1,0 +1,8 @@
+h1 {
+    color: brown;
+}
+
+.active-link {
+    font-weight: bold;
+    color: chocolate;
+}
