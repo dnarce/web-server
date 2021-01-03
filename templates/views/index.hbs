@@ -6,29 +6,45 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>{{pageTitle}}</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='/css/styles.css'>
+    <link rel="stylesheet" href="./assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" />
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css" />
     <script src='/js/app.js'></script>
 </head>
 
 <body>
-
     {{>header}}
+    <section class="pt-20 pb-48 bg-gray-500">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-center text-center mb-24">
+                <div class="w-full lg:w-6/12 px-4">
+                    <h2 class="text-4xl font-semibold">{{title}}</h2>
+                    <p class="text-lg leading-relaxed m-4 text-gray-600">
+                        {{description}}
+                    </p>
+                </div>
+            </div>
+            <div class="flex flex-wrap justify-center text-center mb-24">
+                <div class="w-full lg:w-6/12 px-4">
+                    <form id="locationForm">
+                        <div class="mb-3 pt-0">
+                            <input type="text" id="location" placeholder="i.e. Mendoza"
+                                class="px-3 py-3 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm shadow outline-none focus:outline-none focus:shadow-outline w-full" />
+                        </div>
+                        <button
+                            class="bg-orange-500 text-white active:bg-orange-600 font-bold uppercase text-sm px-6 py-3 rounded-full shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
+                            type="submit" style="transition: all .15s ease">
+                            <i class="fas fa-cloud-sun"></i> Find location weather
+                        </button>
+                    </form>
 
-    <h1>{{title}}</h1>
+                    <div id="weather" class="text-base font-light leading-relaxed mt-0 mb-4">
 
-    <p><code>{{description}}</code></p>
-
-    <form id="locationForm">
-        <label for="location">Location: </label>
-        <input id="location" placeholder="i.e. Mendoza" type="text">
-        <button type="submit" id="findLocationWeatherBtn">Find location weather</button>
-    </form>
-
-    <div id="weather">
-
-    </div>
-
-
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>

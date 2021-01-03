@@ -54,7 +54,7 @@ app.get('/about', (req, res) => {
     res.render('about', {
         title: 'About',
         pageTitle: 'About',
-        descrition: 'This site it will show descritpion related to the purpose of the site.',
+        description: 'This site it will show descritpion related to the purpose of the site.',
         headerLinks: getViewHeaderLinks('/about'),
     });
 });
@@ -63,7 +63,7 @@ app.get('/help', (req, res) => {
     res.render('help', {
         title: 'Help',
         pageTitle: 'Help',
-        descrition: 'This site it will contain the help info.',
+        description: 'This site it will contain the help info.',
         headerLinks: getViewHeaderLinks('/help'),
     });
 });
